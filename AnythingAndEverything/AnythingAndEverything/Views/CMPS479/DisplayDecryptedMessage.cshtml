@@ -1,0 +1,42 @@
+﻿@model AnythingAndEverything.Models.SchoolProjects.Automata.EncryptionProject.PlayFairDecryptedModel
+
+@{
+    ViewBag.Title = "DisplayDecryptedMessage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>DisplayDecryptedMessage</h2>
+
+<div>
+    <h4>PlayFairDecryptedModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EncryptionKey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EncryptionKey)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MessageToDecrypt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MessageToDecrypt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DecryptedMessage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DecryptedMessage)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
